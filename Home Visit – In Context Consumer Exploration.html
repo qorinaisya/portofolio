@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Visit – In Context Consumer Exploration</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Home Visit – In Context Consumer Exploration</h1>
+
+    <!-- Image below the title -->
+    <img src="images/Home Visit – In Context Consumer Exploration.jpg" alt="Eye Tracking Example" />
+
+    <p><strong>Context:</strong> To uncover deeper behavioral and emotional insights, we conducted home visits to observe consumers in their natural environments—providing a richer understanding beyond what traditional surveys could offer.</p>
+
+    <p><strong>Solution:</strong> Designed and led in-home ethnographic sessions, focusing on:</p>
+    <ul>
+      <li>Observing everyday routines, product usage, and decision-making contexts</li>
+      <li>Conducting in-depth interviews to explore attitudes, motivations, and unmet needs</li>
+      <li>Capturing contextual cues like storage habits, brand visibility, and real-life product interaction</li>
+      <li>Using visual and audio documentation to enhance storytelling and insight delivery</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Revealed authentic pain points and unmet needs not surfaced in quantitative research</li>
+      <li>Informed product innovation and marketing strategies with real-life context</li>
+      <li>Helped teams build stronger consumer empathy and relevance in product design</li>
+      <li>Translated insights into personas, journey maps, and inspiration for campaign development</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Survey</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Online Survey</h1>
+
+    <!-- Image below the title -->
+    <img src="images/Online Survey.jpg" alt="Eye Tracking Example" />
+
+    <p><strong>Context:</strong> To support quick business decisions—including brand naming, messaging, and other tactical choices—we needed an agile research method that could deliver fast, reliable consumer input.</p>
+
+    <p><strong>Solution:</strong> Led the design and execution of multiple online surveys targeting relevant consumer segments:</p>
+    <ul>
+      <li>Tested brand name options, gauging appeal, relevance, and memorability</li>
+      <li>Explored simple business questions (e.g., concept preference, communication clarity, packaging cues)</li>
+      <li>Applied automated routing, real-time data collection, and basic quant + qual hybrid analysis</li>
+      <li>Ensured surveys were mobile-optimized and respondent-friendly for broader reach</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Delivered quick-turn insights that guided brand naming decisions with consumer validation</li>
+      <li>Reduced decision-making time through cost-efficient, scalable research</li>
+      <li>Helped stakeholders make confident calls on branding, messaging, and creative direction</li>
+      <li>Enabled agile testing culture across teams—supporting faster go-to-market readiness</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

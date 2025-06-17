@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ad Evaluation Case Study</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Optional: Navbar container -->
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Ad Evaluation Using Eye Tracking & EEG Neurometrics</h1>
+
+    <!-- ✅ Image right below the title -->
+    <img src="images/ad-evaluation-eye-tracking.PNG" alt="Eye Tracking Example" />
+
+
+    <p><strong>Category:</strong> FMCG</p>
+
+    <p><strong>Context:</strong> A new brand was preparing to launch a high-virality ad campaign to position itself as a strong challenger to the market leader. To ensure the creative execution resonated, we needed to evaluate both conscious feedback and subconscious reactions from the audience.</p>
+
+    <p><strong>Solution:</strong></p>
+    <ul>
+      <li><strong>Eye Tracking:</strong> Captured heatmaps showing exactly where attention landed and for how long—frame by frame.</li>
+      <li><strong>EEG:</strong> Measured real-time emotional states like engagement, confusion, and boredom every split second.</li>
+      <li><strong>Qualitative Deep-Dive:</strong> Follow-up interviews uncovered the “why” behind reactions and guided creative improvements.</li>
+    </ul>
+
+    <p>This hybrid method gave a full picture—what people noticed, felt, and remembered.</p>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Drove creative refinements that made the ad more emotionally engaging and visually clear</li>
+      <li>Final version achieved higher brand recall and significantly increased awareness at launch</li>
+      <li>Helped establish the brand as a serious competitor in the market</li>
+      <li>Provided a tested methodology for future campaign evaluations</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

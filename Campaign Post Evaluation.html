@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campaign Post Evaluation</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Campaign Post Evaluation</h1>
+
+    <!-- Image below the title -->
+    <img src="images/How-to-Evaluate-Campaign-Performance.jpg" alt="Eye Tracking Example" />
+
+    <p><strong>Context:</strong> Following the launch of a major campaign, there was a need to evaluate its overall performance, understand how well it delivered on key communication objectives, and uncover optimization points for future campaigns.</p>
+
+    <p><strong>Solution:</strong> Led a comprehensive post-evaluation study combining both quantitative and qualitative approaches:</p>
+    <ul>
+      <li>Measured awareness uplift, message recall, and brand linkage</li>
+      <li>Assessed creative impact across different audience segments</li>
+      <li>Analyzed channel effectiveness to understand where the campaign performed best</li>
+      <li>Conducted qualitative interviews to deep-dive into emotional resonance, clarity, and relevance</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Provided clear visibility on what worked and what didn’t—across media, message, and market</li>
+      <li>Informed future media planning and content strategy with data-backed recommendations</li>
+      <li>Helped optimize creative executions for better engagement and relevance</li>
+      <li>Strengthened campaign effectiveness tracking across marketing and brand teams</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
+

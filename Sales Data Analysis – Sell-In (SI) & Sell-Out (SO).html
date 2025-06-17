@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Data Analysis – Sell-In & Sell-Out</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Sales Data Analysis – Sell-In (SI) &amp; Sell-Out (SO)</h1>
+
+    <!-- Image below the title -->
+    <img src="images/Sales Data Analysis – Sell-In (SI) & Sell-Out (SO).png" alt="Eye Tracking Example" />
+
+    <p><strong>Context:</strong> To optimize business performance, we analyzed Sell-In (SI) and Sell-Out (SO) data to monitor demand patterns, identify gaps, and support commercial decision-making across channels and partners.</p>
+
+    <p><strong>Solution:</strong> Led structured analysis of internal and external sales data:</p>
+    <ul>
+      <li>Tracked SI performance across distributors and regions</li>
+      <li>Analyzed SO trends at outlet level to understand true consumer pull</li>
+      <li>Conducted gap analysis between SI and SO to flag stock issues, slow movers, and supply chain misalignment</li>
+      <li>Visualized data into actionable dashboards and summaries for commercial teams</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Identified sales anomalies and opportunity areas by bridging SI &amp; SO data</li>
+      <li>Informed demand planning, inventory management, and channel strategy</li>
+      <li>Enabled proactive interventions with distributors and sales teams</li>
+      <li>Supported revenue growth and operational efficiency through data-driven decisions</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

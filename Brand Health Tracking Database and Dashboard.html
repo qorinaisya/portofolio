@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brand Health Tracking Dashboard</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #2a2a2a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <section>
+    <h1>Brand Health Tracking Database and Dashboard</h1>
+
+    <!-- Image below the title -->
+    <img src="images/Brand Health Tracking Database and Dashboard.PNG" alt="Eye Tracking Example" />
+
+    <p><strong>Context:</strong> Brand Health Tracking reports were often delayed due to manual processes and scattered data sources, limiting timely decision-making for the business.</p>
+
+    <p><strong>Solution:</strong> Led the development of a centralized BHT database and an automated dashboard to streamline data access and reporting.</p>
+
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>Real-time brand performance monitoring</li>
+      <li>Trend tracking across awareness, usage, conversion, and loyalty metrics</li>
+      <li>Easy filtering by category, demographic, and geography</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Reduced reporting delays from weeks to minutes</li>
+      <li>Enabled faster, insight-driven decisions across teams</li>
+      <li>Improved data accessibility for brand, marketing, and insights teams</li>
+      <li>Standardized reporting for better consistency and alignment</li>
+    </ul>
+  </section>
+
+  <script>
+    // Load the shared navbar
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
